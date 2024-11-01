@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <script>
+        // Crie uma função que retorne o segundo maior número de um array.
+        function segundoMaior(arr) {
+            let unico = [...new Set(arr)]; // Remove duplicados
+            unico.sort((a, b) => b - a); // Ordena em ordem decrescente
+            return unico[1]; // Retorna o segundo maior
+        }
+        console.log("O segundo maior número é:", segundoMaior([1, 2, 3, 4, 5]));
+    </script>
+</body>
+</html>

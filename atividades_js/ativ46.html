@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <script>
+        // Dado um objeto com propriedades numéricas, retorne a soma de seus valores.
+        function somaPropriedadesNumericas(obj) {
+            let soma = 0;
+            for (let prop in obj) {
+                if (typeof obj[prop] === 'number') {
+                    soma += obj[prop];
+                }
+            }
+            return soma;
+        }
+        let objetoNumerico = { a: 10, b: 20, c: 30 };
+        console.log("Soma das propriedades numéricas:", somaPropriedadesNumericas(objetoNumerico));
+    </script>
+</body>
+</html>
